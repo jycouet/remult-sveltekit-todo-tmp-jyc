@@ -1,4 +1,5 @@
-import { Allow, Entity, Fields } from "remult";
+import { Allow, Entity, Field, Fields } from "remult";
+import { Category } from "./category";
 
 @Entity("tasks", {
   allowApiCrud: Allow.authenticated,
@@ -16,4 +17,6 @@ export class Task {
   title = "";
   @Fields.boolean()
   completed = false;
+  @Field(() => Category, { lazy: true, allowNull: true })
+  category?: Category;
 }

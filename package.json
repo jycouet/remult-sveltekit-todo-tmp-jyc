@@ -23,6 +23,7 @@
   "dependencies": {
     "@auth/core": "^0.14.0",
     "@auth/sveltekit": "^0.3.7",
-    "remult": "^0.22.7"
+    "pg": "^8.11.3",
+    "remult": "0.22.8-exp.0"
   }
 }
